@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+	<siteMapNode title="Home" description="" url="~/Default.aspx" roles="*">
+		<siteMapNode title="Register" description="">
+			<siteMapNode title="As a Student" description="Register New Student" url="~/RegisterStudent.aspx" />
+			<siteMapNode title="As a Teacher" description="Register New Teacher" url="~/RegisterTeacher.aspx"/>
+		</siteMapNode>
+		<siteMapNode title="Log In" description="">
+			<siteMapNode title="As a Student" description="Log In Student" url="~/LogInStudent.aspx" />
+			<siteMapNode title="As a Teacher" description="Log In Teacher" url="~/LogInTeacher.aspx" />
+		</siteMapNode>
+	</siteMapNode>
+</siteMap>

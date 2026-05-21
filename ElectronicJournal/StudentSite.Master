@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentSite.master.cs" Inherits="ElectronicJournal.StudentSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server" id="MainHead">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Electronic Journal</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="MainForm" runat="server">
+        <div class="title">
+            <asp:Literal ID="Title" runat="server" Text="Electronic Journal"></asp:Literal>
+        </div>
+        <div class="menu">
+            <asp:Menu ID="MainMenu" runat="server" StaticEnableDefaultPopOutImage="false" Orientation="Horizontal">
+                <items>
+                    <asp:MenuItem NavigateUrl="~/StudentDefault.aspx" Text="Main" ToolTip="Main" />
+                    <asp:MenuItem NavigateUrl="~/StudentMarks.aspx" Text="Marks" ToolTip="Marks" />
+                </items>
+            </asp:Menu>
+        </div>
+        <div class="main-content">
+            <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
